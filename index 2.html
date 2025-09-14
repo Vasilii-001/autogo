@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoGo Service — мобильное ТО в Екатеринбурге</title>
+  <style>
+    body {font-family: Arial, sans-serif;margin: 0;padding: 0;line-height: 1.6;color: #333;background-color: #f8f9fa;}
+    header {background: #004aad;color: #fff;padding: 20px;text-align: center;}
+    header img {max-height: 70px;display: block;margin: 0 auto 10px;}
+    header h1 {margin: 0;font-size: 28px;}
+    .btn {display: inline-block;margin-top: 15px;padding: 10px 20px;background: #ff9900;color: #fff;text-decoration: none;border-radius: 5px;font-weight: bold;}
+    section {padding: 40px 20px;max-width: 900px;margin: auto;}
+    h2 {color: #004aad;margin-bottom: 20px;}
+    ul {list-style: none;padding: 0;}
+    ul li {padding: 10px 0;border-bottom: 1px solid #ddd;}
+    form {background: #fff;padding: 20px;border-radius: 10px;box-shadow: 0 0 8px rgba(0,0,0,0.1);}
+    form input, form select, form button {width: 100%;padding: 10px;margin: 10px 0;border: 1px solid #ccc;border-radius: 5px;}
+    form button {background: #004aad;color: #fff;border: none;cursor: pointer;font-size: 16px;}
+    form button:hover {background: #003580;}
+    footer {text-align: center;padding: 20px;background: #222;color: #aaa;}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="AutoGo Service Logo">
+    <h1>AutoGo Service</h1>
+    <p>Мобильное техническое обслуживание автомобилей в Екатеринбурге</p>
+    <a href="#booking" class="btn">Записаться онлайн</a>
+  </header>
+
+  <section>
+    <h2>Наши услуги</h2>
+    <ul>
+      <li>Замена масла и фильтров — от 1500 ₽</li>
+      <li>Диагностика электрооборудования</li>
+      <li>Замена аккумулятора, ламп, щёток</li>
+      <li>Подкачка и замена колёс</li>
+      <li>Выездная помощь на дороге</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Почему выбирают нас</h2>
+    <ul>
+      <li>✅ Экономия времени — приедем к Вам домой или в офис</li>
+      <li>✅ Работаем по Екатеринбургу и области</li>
+      <li>✅ Честные фиксированные цены</li>
+      <li>✅ Гарантия на работы и запчасти</li>
+      <li>✅ Возможность безналичной оплаты</li>
+    </ul>
+  </section>
+
+  <section id="booking">
+    <h2>Онлайн-запись</h2>
+    <form onsubmit="alert('Спасибо за запись! Мы скоро свяжемся с вами.'); return false;">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <select name="service" required>
+        <option value="">Выберите услугу</option>
+        <option>Замена масла и фильтров</option>
+        <option>Диагностика электрооборудования</option>
+        <option>Замена аккумулятора</option>
+        <option>Замена ламп/щёток</option>
+        <option>Выездная помощь</option>
+      </select>
+      <input type="date" name="date" required>
+      <button type="submit">Записаться</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>📞 +7 (XXX) XXX-XX-XX | WhatsApp | VK</p>
+    <p>© 2025 AutoGo Service, Екатеринбург</p>
+  </footer>
+</body>
+</html>
